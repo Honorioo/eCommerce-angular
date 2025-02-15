@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FormsModule } from '@angular/forms';
-import { WelcomeComponent } from './components/welcome/welcome.component';
 import { CardComponent } from './components/card/card.component';
 import { FooterComponent } from './components/footer/footer.component';
 
@@ -13,7 +12,6 @@ import { FooterComponent } from './components/footer/footer.component';
   declarations: [
     AppComponent,
     HeaderComponent,
-    WelcomeComponent,
     CardComponent,
     FooterComponent
   ],

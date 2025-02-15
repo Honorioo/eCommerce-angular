@@ -1,19 +1,38 @@
 <div class="container">
-  <app-header></app-header>
+  <app-header />
 
-  <app-welcome></app-welcome>
-
-  <div class="row">
-    <div class="col">
-      <app-card></app-card>
-    </div>
-    <div class="col">
-      <app-card></app-card>
-    </div>
-    <div class="col">
-      <app-card></app-card>
+  <div class="p-5 mt-3 text-center bg-body-tertiary rounded-3">
+    <h1 class="text-body-emphasis">Bem-vindo à Loja Virtual Minsait</h1>
+    <p class="col-lg-8 mx-auto fs-5 text-muted">
+      Explore a nossa loja virtual e descubra uma ampla variedade de produtos de
+      alta qualidade.
+    </p>
+    <div class="d-inline-flex gap-2">
+      <button
+        class="d-inline-flex align-items-center btn btn-primary btn-lg px-4 rounded-pill"
+        type="button"
+      >
+        <i class="fa fa-plus-circle me-2" aria-hidden="true"></i> Adicionar
+        Produto
+      </button>
+      <button
+        class="btn btn-outline-secondary btn-lg px-4 rounded-pill"
+        type="button"
+      >
+        Saiba Mais
+      </button>
     </div>
   </div>
 
-  <app-footer></app-footer>
+  <div class="row mt-3">
+    <div class="col-3" *ngFor='let product of products'>
+      <app-card [product]="product" />
+    </div>
+  </div>
+
+
+  <app-footer />
+
+
+  <router-outlet></router-outlet>
 </div>
