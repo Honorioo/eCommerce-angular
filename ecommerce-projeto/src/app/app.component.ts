@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ecommerce-projeto';
-  "products": [
+  products = [
     {
       title: "Produto 1",
       description: "Descrição do produto 1",
@@ -31,6 +31,15 @@ export class AppComponent {
       price: "R$ 300,00",
       discount: "Desconto 30%",
       stock: "Em estoque"
-    }
+    },
+    {
+      title: "Produto 4",
+      description: "Descrição do produto 4",
+      imageSrc: "https://placehold.co/250x300",
+      price: "R$ 400,00",
+      discount: "Desconto 40%",
+      stock: "Em estoque"
+    },
+
   ]
 }
